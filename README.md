@@ -40,7 +40,7 @@ All the basic machine learning models are made from scratch except 2 Layer Neura
 ## Accuracy over test set
   - **Simple_CNN:** 99.4%
   - **2 Layer NN:** 98%
-  - **RBA over Linear Classifier:** 
+  - **RBA over Linear Classifier:** 91.3%
   - **Sofmax Classification(1 layer nn):** 90.8%
   - **KNN:** 89.5%
   
