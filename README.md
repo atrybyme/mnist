@@ -37,10 +37,14 @@ All the basic machine learning models are made from scratch except 2 Layer Neura
   For most algorithms we have taken 41000 images for training and rest 1000 for testing.
   Except a simple filter no preprocessing is done because the aim of the project was to understand the different classification techniques.
 
-## Order of Accuracy
-  Simple_CNN > 2_Layer_NN > Radial_Basis_Analysis over linear classifier > 1 Layer NN > KNN
+## Accuracy over test set
+  - **Simple_CNN:** 99.4%
+  - **2 Layer NN:** 98%
+  - **RBA over Linear Classifier:** 
+  - **Sofmax Classification(1 layer nn):** 90.8%
+  - **KNN:** 89.5%
   
-### Please feel free to contact me if you have any questions or suggestions.
+##### Please feel free to contact me if you have any questions or suggestions.
   
 [1]: mnist.png
 [2]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.2.815&rep=rep1&type=pdf
