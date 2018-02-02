@@ -74,22 +74,13 @@ training_data_raw = (np.genfromtxt('train.csv',delimiter=','))[1:]
 
 #sklearn just to shuffle the data
 import sklearn
-x_tr,y = sklearn.utils.shuffle((training_data_raw[:,1:])/255,training_data_raw[:,0])
-classes = 10
-x_tr = pr.pixelthresholdfilter(x_tr,(127/255))
-x = x_tr
-#split the data between train and test
-x_train = x[0:41900]
-y_train = y[0:41900]
-x_test = x[41900:42000]
-y_test = y[41900:42000]
+x_tr,y = sklearn.utils.shuffle((training_data_raw[:,1:])/255.0,training_data_raw[:,0])
 
-
-# In[53]:
 
 
 #Subtract the mean from the data and normalizing
-x,y = (training_data_raw[:,1:]),training_data_raw[:,0]
+x = x_tr
+
 x = x.astype(float)
 classes = 10
 x_train1 = (x[0:41000]-np.mean(x[0:41000],axis=0))/255.00
@@ -134,8 +125,8 @@ theta,bias = np.random.randn(np.shape(x_train)[1],classes),np.random.randn(1,cla
 # In[75]:
 
 
-learning_rate = 0.06 ##0.3 was best for l=0.01 and points=500
-iteration = 300
+learning_rate = 0.2 ##0.3 was best for l=0.01 and points=500
+iteration = 3000
 print("Initial Cross Entropy")
 print(cross_entropy(x_train,y_train,theta,bias))
 batch_size = 50
