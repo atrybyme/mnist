@@ -1,6 +1,6 @@
 
 # coding: utf-8
-
+# Author : Shubhansh Awasthi
 # ### Hand Digit Classification using "1 Layer Neural Network(Softmax Classification)"
 
 # In[12]:
@@ -143,3 +143,4 @@ e= (np.equal(y_test,d))*1
 print("ACCURACY ON Testing sET")
 print((np.sum(e))/len(y_test))
 
+# Author : Shubhansh Awasthi
