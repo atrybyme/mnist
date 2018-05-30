@@ -1,4 +1,4 @@
-
+# Author : Shubhansh Awasthi
 # coding: utf-8
 
 # In[30]:
@@ -166,4 +166,4 @@ d = np.argmax(l,axis=1)
 e= (np.equal(y_test,d))*1
 print("ACCURACY ON Testing sET")
 print((np.sum(e))/len(y_test))
-
+# Author : Shubhansh Awasthi
